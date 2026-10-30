@@ -49,7 +49,7 @@ claude mcp add --transport http no-tax-on-overtime https://no-tax-on-overtime-mc
 Or run it locally:
 
 ```
-claude mcp add no-tax-on-overtime -- npx -y github:theluckystrike/no-tax-on-overtime-mcp
+claude mcp add no-tax-on-overtime -- npx -y no-tax-on-overtime-mcp
 ```
 
 ### Claude Desktop
@@ -61,7 +61,7 @@ Add this to `claude_desktop_config.json`:
   "mcpServers": {
     "no-tax-on-overtime": {
       "command": "npx",
-      "args": ["-y", "github:theluckystrike/no-tax-on-overtime-mcp"]
+      "args": ["-y", "no-tax-on-overtime-mcp"]
     }
   }
 }
