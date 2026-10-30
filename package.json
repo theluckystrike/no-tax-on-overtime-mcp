@@ -1,0 +1,32 @@
+{
+  "name": "no-tax-on-overtime-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the 2025-2028 no tax on overtime, tips and senior deductions (OBBBA), with IRS caps, phase-outs and brackets.",
+  "type": "module",
+  "bin": {
+    "no-tax-on-overtime-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": ["dist", "README.md", "LICENSE", "DATA_SOURCES.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "no-tax-on-overtime", "overtime", "tips", "tax", "obbba", "irs", "schedule-1-a"],
+  "author": "theluckystrike",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/theluckystrike/no-tax-on-overtime-mcp.git" },
+  "homepage": "https://noovertimetax.com",
+  "mcpName": "io.github.theluckystrike/no-tax-on-overtime-mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.40.0"
+  }
+}
